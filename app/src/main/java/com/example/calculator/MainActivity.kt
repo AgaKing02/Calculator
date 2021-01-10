@@ -9,15 +9,12 @@ import androidx.appcompat.app.AppCompatActivity
 
 
 class MainActivity : AppCompatActivity() {
-    var result // текстовое поле для вывода результата
-            : TextView? = null
-    var number // поле для ввода числа
-            : EditText? = null
-    var operation // текстовое поле для вывода знака операции
-            : TextView? = null
-    var operand: Double? = null // операнд операции
-
+    var result: TextView? = null
+    var number: EditText? = null
+    var operation: TextView? = null
+    var operand: Double? = null
     var lastOperation = "="
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
